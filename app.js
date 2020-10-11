@@ -33,11 +33,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
   var product = a * b;
-<<<<<<< HEAD
-  var str = `The product of ${a} and ${b} is ${product}.`
-=======
   var str = `The product of ${a} and ${b} is ${product}.`;
->>>>>>> e277813d8f7ccde3e3012c0c7408e9b95fbea1c2
   console.log([product, str]);
 
   return [product, str];
@@ -77,7 +73,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
- testSumAndMultiply(4,7,5);
+//testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -95,12 +91,16 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+  var arrayTotal = sum(2, sum (3,4));
+  var str = `${2},${3},${4} was passed in as a array of numbers, and ${9} is their sum.`;
+  console.log(arrayTotal, str);
 
+  return [arrayTotal, str];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -122,7 +122,7 @@ function multiplyArray(multArr) { //eslint-disable-line
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 
