@@ -89,11 +89,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
-
+//a=sumArr[0], b=sumArr[1], c=sumArr[2]
 function sumArray(sumArr) { //eslint-disable-line
-  var arrayTotal = sum(2, sum (3,4));
-  var str = `${2},${3},${4} was passed in as a array of numbers, and ${9} is their sum.`;
-  console.log(arrayTotal, str);
+  var arrayTotal = sum(sumArr[0], sum (sumArr[1],sumArr[2])[0])[0];
+  var str = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${arrayTotal} is their sum.`;
+  //console.log(arrayTotal, str);
 
   return [arrayTotal, str];
 }
