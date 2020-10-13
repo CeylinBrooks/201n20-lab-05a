@@ -30,14 +30,11 @@ Write a function called multiply() that takes in two numbers as arguments and re
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
-// Write your code here
+//Write your code here:
+
 function multiply(a, b) { //eslint-disable-line
   var product = a * b;
-<<<<<<< HEAD
-  var str = `The product of ${a} and ${b} is ${product}.`
-=======
   var str = `The product of ${a} and ${b} is ${product}.`;
->>>>>>> e277813d8f7ccde3e3012c0c7408e9b95fbea1c2
   console.log([product, str]);
 
   return [product, str];
@@ -62,22 +59,22 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
-  var sumTotal = sum(a, sum(b,c)[0])[0];
-  var str = a + ' and ' + b + ' and ' + c + ' sum to ' + sumTotal + '.';
-  console.log([sumTotal, str]);
+// function sumAndMultiply(a, b, c) { //eslint-disable-line
+//   var sumTotal = sum(a, sum(b,c)[0])[0];
+//   var str = a + ' and ' + b + ' and ' + c + ' sum to ' + sumTotal + '.';
+//   console.log([sumTotal, str]);
 
-  var productTotal = multiply(a, multiply(b,c)[0])[0];
-  var str2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productTotal + '.';
-  console.log([productTotal, str2]);
+//   var productTotal = multiply(a, multiply(b,c)[0])[0];
+//   var str2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productTotal + '.';
+//   console.log([productTotal, str2]);
 
-  return [sumTotal, productTotal, str, str2];
-}
+//   return [sumTotal, productTotal, str, str2];
+// }
 
 
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
- testSumAndMultiply(4,7,5);
+//testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -118,7 +115,7 @@ Test this function by hand in the console to get it working, and when you think 
 //a=multArr[0], b=multArr[1], c=multArr[2]
 var testArray = [2, 3, 4];
 function multiplyArray(multArr) { //eslint-disable-line
-  var arrayTotal = product(multArr[0], product(multArr[1],multArr[2])[0])[0];
+  var arrayTotal = multiply(multArr[0], multiply(multArr[1],multArr[2])[0])[0];
   var str = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${arrayTotal}.`;
   console.log(arrayTotal, str);
 
@@ -128,7 +125,7 @@ function multiplyArray(multArr) { //eslint-disable-line
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 
